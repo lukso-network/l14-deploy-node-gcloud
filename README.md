@@ -8,7 +8,7 @@ $ gcloud compute instances create my-l14-node \
 ```
 
 
-## Handling
+## Usage
 
 SSH to the node:
 
