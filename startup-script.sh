@@ -13,6 +13,9 @@ if [ command -v parity ]
     sudo mount -o discard,defaults /dev/sdb /mnt/disk1
     sudo mkdir /mnt/disk1/data
 
+    git clone https://github.com/lukso-network/l14-deploy-node-gcloud.git
+    cd l14-deploy-node-gcloud
+
     # parity system service
     sudo cp ./parity.service /etc/systemd/system
     sudo chmod +x /etc/systemd/system/parity.service
