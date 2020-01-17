@@ -3,8 +3,8 @@
 auto_update = "none"
 base_path = "/mnt/disk1/data"
 #no_persistent_txqueue = true #store pending tx
-chain = "./spec.json"
-keys_path = "./keys"
+chain = "/etc/parity/spec.json"
+#keys_path = "/etc/parity/keys"
 
 [network]
 # Parity will sync by downloading latest state first. Node will be operational in couple minutes.

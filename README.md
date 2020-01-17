@@ -26,3 +26,8 @@ Stop node:
 ```bash
 sudo systemctl stop parity
 ```
+
+To edit the config
+```bash
+sudo nano /etc/parity/config.toml
+```

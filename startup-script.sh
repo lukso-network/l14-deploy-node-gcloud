@@ -16,6 +16,13 @@ if [ command -v parity ]
     git clone https://github.com/lukso-network/l14-deploy-node-gcloud.git
     cd l14-deploy-node-gcloud
 
+    # move config files
+    sudo mkdir /etc/parity/
+    sudo cp ./config.toml /etc/parity/
+    sudo cp ./spec.json /etc/parity/
+    sudo rm ./config.toml
+    sudo rm ./spec.json
+
     # parity system service
     sudo cp ./parity.service /etc/systemd/system
     sudo chmod +x /etc/systemd/system/parity.service
