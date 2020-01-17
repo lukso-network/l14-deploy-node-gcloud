@@ -1,4 +1,4 @@
-# Simple repo to deploy a node on Google Cloud Compute
+# Scripts tp deploy a node on Google Cloud Compute
 
 ## Deployment
 
