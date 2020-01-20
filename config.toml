@@ -12,8 +12,17 @@ bootnodes = ["enode://270410a8de0378337da37aedf5273ddcc573e1e414bbe28c1cfaf687a3
 warp = true
 
 [rpc]
-#apis = ["web3", "eth", "net", "parity", "parity_set", "traces", "rpc"]
+disable = false
+port = 8545
+interface = "local"
+apis = ["web3", "eth", "net", "traces", "rpc", "pubsub"]
 cors = ["*"]
+
+[websockets]
+disable = false
+port = 8546
+interface = "local"
+apis = ["web3", "eth", "net", "traces", "rpc", "pubsub"]
 
 [footprint]
 # Compute and Store tracing data. (Enables trace_* APIs).

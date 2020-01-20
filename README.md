@@ -3,8 +3,11 @@
 ## Deployment
 
 ```bash
+$ gcloud compute disks create disk1 \
+    --size=200GB
 $ gcloud compute instances create my-l14-node \
-      --metadata-from-file startup-script=start-script.sh
+    --metadata-from-file startup-script=start-script.sh \
+    --disk=mode=rw,name=disk1
 ```
 
 
