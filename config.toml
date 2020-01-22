@@ -8,7 +8,7 @@ chain = "/etc/parity/spec.json"
 
 [network]
 # Parity will sync by downloading latest state first. Node will be operational in couple minutes.
-bootnodes = ["enode://270410a8de0378337da37aedf5273ddcc573e1e414bbe28c1cfaf687a31295f3b740624fedbe5dd3ee532c910da18be48d9c41454a124b425c2c71b568a3d06e@10.154.0.2:30303"]
+bootnodes = ["enode://4e19ab83c053d6e6f45281c4d519c399de9df2162505850259540d623845c1d5662989d6298703e827a0c55225f7fb941b6ebb2527261b1a693bf1432fd67361@34.76.61.201:30303"]
 warp = true
 
 [rpc]

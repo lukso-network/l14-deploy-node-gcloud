@@ -10,6 +10,8 @@ $ gcloud compute instances create my-l14-node \
     --disk=mode=rw,name=disk1
 ```
 
+[Find here the full config of parities config.toml](https://wiki.parity.io/Configuring-Parity-Ethereum)
+
 
 ## Usage
 
