@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Checking partity installation..."
+echo "Checking parity installation..."
 
 FILE=/snap/bin/parity
 if ! test -f "$FILE"; then
@@ -32,6 +32,8 @@ if ! test -f "$FILE"; then
     sudo cp ./parity.service /etc/systemd/system
     sudo chmod +x /etc/systemd/system/parity.service
 fi
+
+echo "Starting parity..."
 
 sudo systemctl enable parity
 
