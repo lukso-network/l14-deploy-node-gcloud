@@ -2,7 +2,8 @@
 
 echo "Checking partity installation..."
 
-if ! type "$parity" > /dev/null; then
+FILE=/snap/bin/parity
+if ! test -f "$FILE"; then
 
     echo "Installing parity..."
 
