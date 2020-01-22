@@ -1,7 +1,8 @@
-#! /bin/bash
+#!/bin/bash
 
-if [ command -v parity ]
-  then
+echo "Installing parity"
+
+if ! type "$parity" > /dev/null; then
     sudo apt update
     yes | sudo apt-get install git
     yes | sudo apt install snapd
@@ -9,7 +10,7 @@ if [ command -v parity ]
 
     # mount disk
     sudo mkfs.ext4 -m 0 -E lazy_itable_init=0,lazy_journal_init=0,discard /dev/sdb
-    sudo mkdir -p /mnt/disks/disk1
+    sudo mkdir -p /mnt/disk1
     sudo mount -o discard,defaults /dev/sdb /mnt/disk1
     sudo mkdir /mnt/disk1/data
 

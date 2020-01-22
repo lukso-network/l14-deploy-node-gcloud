@@ -3,12 +3,25 @@
 ## Deployment
 
 ```bash
-$ gcloud compute disks create disk1 \
-    --size=200GB
+$ gcloud config set project lukso-poc
+$ gcloud config set compute/zone europe-west3-c
+
+$ gcloud compute disks create disk123 \
+    --size=200GB \
+    --type=pd-standard \
+    --replica-zones=europe-west3-b,europe-west3-c
+
 $ gcloud compute instances create my-l14-node \
-    --metadata-from-file startup-script=start-script.sh \
-    --disk=mode=rw,name=disk1
+    --metadata-from-file startup-script=startup-script.sh \
+    --disk=mode=rw,name=disk123
 ```
+
+To check if the startup-script worked, ssh into the server and run:
+```
+cat /var/log/daemon.log
+```
+
+And look for `startup-script`.
 
 [Find here the full config of parities config.toml](https://wiki.parity.io/Configuring-Parity-Ethereum)
 
