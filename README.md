@@ -1,4 +1,4 @@
-# Scripts tp deploy a node on Google Cloud Compute
+# Script to deploy a L14 node on Google Cloud Compute
 
 ## Deployment
 
