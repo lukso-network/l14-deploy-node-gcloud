@@ -1,8 +1,11 @@
 #!/bin/bash
 
-echo "Installing parity"
+echo "Checking partity installation..."
 
 if ! type "$parity" > /dev/null; then
+
+    echo "Installing parity..."
+
     sudo apt update
     yes | sudo apt-get install git
     yes | sudo apt install snapd
