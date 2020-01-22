@@ -18,7 +18,7 @@ $ gcloud compute instances create my-l14-node \
 
 To check if the startup-script worked, ssh into the server and run:
 ```
-cat /var/log/daemon.log
+$ cat /var/log/daemon.log
 ```
 
 And look for `startup-script`.
@@ -32,20 +32,20 @@ SSH to the node:
 
 Read logs:
 ```bash
-tail -f /var/log/parity.log
+$ tail -f /var/log/parity.log
 ```
 
 Start node:
 ```bash
-sudo systemctl start parity
+$ sudo systemctl start parity
 ```
 
 Stop node:
 ```bash
-sudo systemctl stop parity
+$ sudo systemctl stop parity
 ```
 
 To edit the config
 ```bash
-sudo nano /etc/parity/config.toml
+$ sudo nano /etc/parity/config.toml
 ```
