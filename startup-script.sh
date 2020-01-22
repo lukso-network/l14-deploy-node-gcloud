@@ -33,3 +33,5 @@ if ! type "$parity" > /dev/null; then
 fi
 
 sudo systemctl enable parity
+
+sudo systemctl start parity
