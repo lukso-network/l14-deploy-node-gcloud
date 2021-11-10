@@ -9,7 +9,7 @@ ExecStart=/snap/bin/parity --config /etc/parity/config.toml
 # picks up users default config.toml in $HOME/.local/share/io.parity.ethereum/
 # User=username
 # Group=groupname
-Restart=on-failure
+Restart=always
 
 # Specifies which signal to use when killing a service. Defaults to SIGTERM.
 # SIGHUP gives parity time to exit cleanly before SIGKILL (default 90s)
