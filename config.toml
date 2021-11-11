@@ -23,6 +23,7 @@ disable = false
 port = 8546
 interface = "0.0.0.0"
 apis = ["web3", "eth", "net", "traces", "rpc", "pubsub"]
+origins = ["*"]
 
 [footprint]
 # Compute and Store tracing data. (Enables trace_* APIs).
